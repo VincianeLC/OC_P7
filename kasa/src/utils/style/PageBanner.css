@@ -1,0 +1,44 @@
+.PageBanner {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    background-size: cover;
+    align-items: center;
+    width: 100%;
+    min-height: 223px;
+    background: #000000;
+    mix-blend-mode: darken;
+    border-radius: 25px;
+    opacity: 0.5;
+}
+
+.PageBannerImage {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 25px;
+    height: 224px;
+    object-fit: cover;
+    
+   
+
+}
+
+.PageBanner h2 {
+    position: absolute;
+
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 142.6%;
+    display: flex;
+    align-items: center;
+
+
+    color: #FFFFFF;
+
+}

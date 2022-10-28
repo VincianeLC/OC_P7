@@ -1,0 +1,130 @@
+.container{
+width: 100%;
+margin:0;
+}
+.TheBigFlex{
+
+display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+.content{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	
+}
+
+.LogementImage img{
+	max-height: 415px;
+   object-fit: cover;
+}
+
+.Title{
+	display: flex;
+	flex-direction: column;
+	
+	color: #ff6060;
+	font-family: 'Montserrat';
+	font-weight: 500;
+
+
+
+}
+
+
+.TAG {
+	background-color: #FF6060;
+	display: flex;
+	justify-content: space-evenly;
+}
+.TAGContainer ul{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 115px;
+	height: 25px;
+	padding: 0 3px;
+	font-size: .7em;
+	background-color: #FF6060;
+	color: #fff;
+	border-radius: 10px;
+}
+
+.TAG {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: left;
+	list-style-type: none;
+	gap: 10px;
+}
+
+
+
+
+
+.profileContent{
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+	
+
+
+}
+          .profileInfos{
+			display: flex;
+			flex-direction: row;	
+			width: fit-content;
+			justify-content: flex-end;
+		  }
+
+		  .profileInfos p{
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			justify-content: flex-end;
+		
+
+		  }
+
+		  .profileInfos img {
+			display: flex;
+			justify-content: flex-end;
+			width: 25%;
+		  }
+
+ .profileRating{
+	display: flex;
+	width: fit-content;
+	align-items: flex-end;
+ }
+
+
+ .ColBox{
+	display: flex;
+	width: 90%;
+	flex-wrap: wrap ;
+	gap:5%;
+	
+
+ }
+ .Col1{
+	display: flex;
+	flex-direction: row;
+	width: 45%;
+	justify-self: flex-start;
+	gap:5%;
+	
+
+ }
+ .Col2{
+	display: flex;
+	flex-direction: row;
+	width: 45%;
+	flex-wrap: wrap ;
+	justify-self: flex-end;
+	gap:5%;
+	
+
+ }

@@ -1,0 +1,40 @@
+
+.banner {
+       
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+
+
+    
+    
+}
+
+.logo {
+    
+    display: flex;
+  
+    }
+
+
+.Links {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    list-style: none;
+    justify-content: space-around;
+    color: #FF6060;
+    font-size: 16px;
+
+    font-family: 'Montserrat';
+}
+
+
+
+.Links :hover{
+     color: #FF6060;
+     text-decoration-line: underline;
+}
+
+
+

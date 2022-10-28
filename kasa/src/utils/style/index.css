@@ -1,0 +1,27 @@
+a:-webkit-any-link {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+body{
+width: 100%;
+margin:0;
+position: absolute;
+display: flex;
+flex-direction: column;
+ 
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 36px;
+}
+h2{
+    font-size:18px;
+}
