@@ -22,12 +22,12 @@ return(
       {logements && logements.filter(logement => logement.id === id)
         .map((logement, i) => {
           console.log(logement);
-          return <div className='LogementContainer'>
+          return <div className='LogementContainer' key={i}>
             
            <Carousel slides={logement.pictures} />
      
               <div className='TheBigFlex'>
-            <div className='content'>
+            <div className='content'> 
 
               <div className='Title'>
                   <h1>{logement.title}</h1>
