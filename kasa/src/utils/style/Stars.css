@@ -1,0 +1,22 @@
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.star svg {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 30px;
+    width: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    .star svg {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 15px;
+        width: 15px;
+    }
+}

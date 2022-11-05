@@ -1,40 +1,59 @@
-
-.banner {
-       
- display: flex;
- flex-direction: row;
- justify-content: space-between;
-
-
-    
-    
+.Banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2% 2% 2% 2%;
 }
 
-.logo {
-    
-    display: flex;
-  
-    }
-
+.Hlogo{
+    fill: #FF6060;
+}
 
 .Links {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 25px;
-    list-style: none;
     justify-content: space-around;
     color: #FF6060;
     font-size: 16px;
-
     font-family: 'Montserrat';
+    text-transform: none;
+    font-weight: 500;
 }
 
-
-
-.Links :hover{
-     color: #FF6060;
-     text-decoration-line: underline;
+.Links :hover {
+    color: #FF6060;
+    text-decoration-line: underline;
 }
 
+@media screen and (max-width: 600px) {
+    .Banner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2% 2% 2% 2%;
+    }
 
 
+.Hlogo{
+    fill: #FF6060;
+}
+
+    .Links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 25px;
+        justify-content: space-around;
+        color: #FF6060;
+        font-size: 12px;
+        font-family: 'Montserrat';
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    .Links :hover {
+        color: #FF6060;
+        text-decoration-line: underline;
+    }
+}

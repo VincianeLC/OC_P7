@@ -1,44 +1,36 @@
 .PageBanner {
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    background-size: cover;
     align-items: center;
-    width: 100%;
-    min-height: 223px;
+    justify-content: center;
     background: #000000;
-    mix-blend-mode: darken;
     border-radius: 25px;
+    height: 223px;
+}
+
+.PageBanner img {
+    border-radius: 25px;
+    width: 100%;
+    height: 223px;
+    background-size: cover;
     opacity: 0.5;
 }
 
-.PageBannerImage {
+@media screen and (max-width: 600px) {
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    border-radius: 25px;
-    height: 224px;
-    object-fit: cover;
-    
-   
+    .PageBanner {
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        height: 111px;
+        background: #000000;
+    }
 
-}
+    .PageBanner img {
+        border-radius: 10px;
+        width: 335px;
+        height: 111px;
+        background-size: cover;
+        opacity: 0.5;
 
-.PageBanner h2 {
-    position: absolute;
-
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 142.6%;
-    display: flex;
-    align-items: center;
-
-
-    color: #FFFFFF;
+    }
 
 }

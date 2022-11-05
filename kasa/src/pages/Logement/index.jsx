@@ -1,62 +1,80 @@
-import React from 'react';
+import React from 'react'
 import { useParams } from 'react-router-dom';
 import Carousel from '../../components/Carousel';
 import '../../utils/style/Logement.css'
-import Logements from '../../data/data.json';
+import logements from '../../data/data.json';
 import Collapse from '../../components/Collapse';
+import Stars from '../../components/Stars';
+import Error from '../../components/Error';
+
 
 
 
 function Logement() {
-    const { id } = useParams();
+  const { id } = useParams(); 
   
-    return (
-    
-         <div className='container'>
+  let logementExist = logements.filter(logement => logement.id === id);
+   if (logementExist[0] === undefined ) return <Error/>
+   else
+return(
+    <div className='Flex'>
 
-          {Logements && Logements.filter(logement  => logement.id === id)
-        .map(logement => {
-        return   <div className='logementImage' key={logement.id} >
-        <Carousel slides={logement.pictures} />
-<div className='TheBigFlex'>
-      <div className='content'>
+      {logements && logements.filter(logement => logement.id === id)
+        .map((logement, i) => {
+          console.log(logement);
+          return <div className='LogementContainer'>
+            
+           <Carousel slides={logement.pictures} />
+     
+              <div className='TheBigFlex'>
+            <div className='content'>
 
-        <div className='Title'>
-            <h1>{logement.title}</h1>
-            <h2>{logement.location}</h2>
-        </div>
+              <div className='Title'>
+                  <h1>{logement.title}</h1>
+                  <h2>{logement.location}</h2>
+                  </div>
 
-        <div className='TAGContainer'> <ul className="TAG"><li>{logement.tags}</li></ul></div>
-       
-        </div>
-        
-  
 
-        <div className='profileContent'>
-          <div className='profileInfos'>
-            <p>{logement.host.name}</p>
-        <img src={logement.host.picture} alt='profilepicture' />
-        </div>
+                  <div className='TAGContainer'>
+              <ul>
+                {logement.tags.map((tag, i)=>
+                <li key={i}>{tag}</li>
+                  )}
+                  </ul>
+                
+             
+                  </div>
+              
+              </div>
+                  <div className='profileContent'>
+                  <div className='profileInfos'>
+                  <p>{logement.host.name}</p>
+                  <div className='profilePicture'> <img src={logement.host.picture} alt='profilepicture' /></div>
+              
+                  </div> 
 
-        <div className='profileRating'>{logement.rating}</div>
-        </div>
-        </div>
-        <div className='ColBox'>
-        <div className='Col1'>
-          <Collapse props={logement.description}>Description</Collapse>
+                  <Stars key={i} logement={logement} /> </div>
+</div>
+            
+          
+            
+           
+          
+      <div className='BigColBox'><Collapse props={logement.description}><h2>Description</h2></Collapse>
+              <Collapse  props= {logement.equipments}><h2>Equipements </h2></Collapse></div>
+
+                 
+                
+             
+           </div>
+
+
+        } )
+
+      }
+
     </div>
-          <div className='Col2'>
-        <Collapse props={logement.equipments}>Equipement</Collapse>
-        </div></div></div>
-   
-       
-
-        
-       })
-      
+  )
 }
 
-</div>
-    )}
-  
-  export default Logement
+export default Logement

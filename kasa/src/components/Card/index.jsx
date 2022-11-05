@@ -1,18 +1,18 @@
 import { Link } from 'react-router-dom'
-import './Card.css'
+import '../../utils/style/Card.css'
 
 
 function Card(props) {
 	return (
 	
 
-<Link className='box' 
+<Link className='CardContainer' 
 	to ={`/logement/${props.logement.id}`} > 
 	
 <img src={props.logement.cover} alt='cover' />
 
-<div className='BOX'>
-	<h1>{ props.logement.title}</h1>
+<div className='CardContent'>
+	<h2>{ props.logement.title}</h2>
 </div>
 		
 </Link>

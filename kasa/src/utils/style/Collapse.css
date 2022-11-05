@@ -1,0 +1,78 @@
+.CollapseBox {
+    width: 100%;
+    border-radius: 5px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 3%;
+}
+
+.collapse-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #FFFFFF;
+    background: #FF6060;
+    height: 52px;
+    padding: 0% 3% 0% 3%;
+    border-radius: 5px;
+    margin-bottom: -2%;
+    position: relative;
+    z-index: 3;
+}
+
+.collapse-toggle-button-open {
+    transform: rotate(0deg);
+    transition: all 300ms;
+}
+
+.collapse-toggle-button-closed {
+    transition: all 300ms;
+    transform: rotate(180deg);
+}
+
+.collapse-text {
+    color: #FF6060;
+    background: #F7F7F7;
+    height: 249px;
+    border-radius: 10px;
+    padding: 3%;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .collapse-title {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        color: #FFFFFF;
+        background: #FF6060;
+        height: 29.93px;
+        padding: 0% 3% 0% 3%;
+        border-radius: 5px;
+        margin-bottom: 0;
+        z-index: 3;
+
+    }
+
+    .collapse-title svg {
+        height: 15.195881843566895px;
+        width: 8.95635986328125px;
+    }
+
+    .collapse-text {
+        height: 143.32px;
+        border-radius: 5px;
+        z-index: -1;
+    }
+
+}

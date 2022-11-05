@@ -1,14 +1,63 @@
-
-.footer{ 
-    
-    
-    
+.footer {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: center;
-    padding: 60px 0;
-    
+    height: 209px;
+    background: #000000;
+    padding-bottom: 2%;
 
-background: #000000;
-color: white;}
+}
+
+
+.footer p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 142.6%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+.logo {
+    width: 122px;
+    height: 39.444419860839844px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 209px;
+        background: #000000;
+        padding-bottom: 2%;
+
+        
+    
+    }
+    
+    
+    .footer p {
+        font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 142.6%;
+display: flex;
+text-align: center;
+
+color: #FFFFFF;
+
+
+    }
+    
+    
+    .logo {
+        width: 122px;
+        height: 39.444419860839844px;
+    }
+
+}

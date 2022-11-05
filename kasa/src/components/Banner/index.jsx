@@ -5,8 +5,8 @@ import logo from "../../assets/LOGO.svg"
 
 function Banner() {
 	return (
-		<div className='banner'>
-			<img src={logo} alt='Kasa'/>
+		<div className='Banner'>
+			<img src={logo} alt='Kasa' className='Hlogo'/>
     
 <ul className='Links'>
 	

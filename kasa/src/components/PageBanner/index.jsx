@@ -1,8 +1,5 @@
 import '../../utils/style/PageBanner.css'
 
-
-
-
 function PageBanner({children}) {
   
     return (

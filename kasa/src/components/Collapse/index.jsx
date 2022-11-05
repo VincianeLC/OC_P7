@@ -1,46 +1,46 @@
 import { useState } from 'react'
-import './Collapse.css'
-import Arrow from '../../assets/Vector.svg'
+import '../../utils/style/Collapse.css'
+import { ReactComponent as Arrow } from '../../assets/arrow-coll.svg';
 import '../../utils/style/index.css';
 
 
 function Collapse({children, props}) {
 
+	
 const [isOpen, setIsOpen] = useState({})
 
 	return isOpen ? (
-	
-	
-		<div className='CollapseBox'>
-      <div className='collapse-title'>{children}
-			<button
-				className='collapse-toggle-button'
-				onClick={() => setIsOpen(false)}
-			><img className='Open'src={Arrow} alt='Open Button'/>
-			
-			</button>
-      </div>
-	
-				<div className='collapse-text'>{props}</div>
-			
+		<div className='TheBigFlex'>
 
-				</div>
+		<div className='CollapseBox'>
+      
+			 <div className='collapse-title'>{children}
+			 <Arrow className='collapse-toggle-button-open'
+				onClick={() => setIsOpen(false)}/>
+			</div>
+	
+			
+			
+</div>
+				</div>	
 
 	) : (
 
-		
-		
-			 <div className='collapse-title'>{children}<button
-				className='collapse-toggle-button'
-				onClick={() => setIsOpen(true)}
-			>
-			
-				<img className='Closed' src={Arrow} alt='Close Button'/>
-			</button></div>
-
-		
-		
-				
+		<div className='TheBigFlex'>
+		<div className='CollapseBox'>
+	
+			 <div className='collapse-title'>{children}
+			 <Arrow className='collapse-toggle-button-closed' onClick={() => setIsOpen(true)}/>
+			</div>
+			<div className='collapse-text'>
+				{ (props.constructor === String) ?
+					<p>{props}</p> : 
+					props.map((e, i)=>
+						<ul key={i}><li>{e}</li></ul>
+						  )}
+					</div>
+			</div>	
+			</div>
 		
 	)
   }

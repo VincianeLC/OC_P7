@@ -1,0 +1,59 @@
+.carousel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 25px;
+}
+
+.carousel img {
+  width: 1240px;
+  max-height: 455px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.Arrows {
+  position: absolute;
+  display: flex;
+  min-width: 1185px;
+  margin: 2%;
+  justify-content: space-between;
+}
+
+.carouselArrowLeft {
+  display: flex;
+  flex-direction: row;
+}
+
+.Arrows svg {
+  display: flex;
+  flex-direction: row;
+  height: 79.2px;
+  width: 46.68px;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+
+  .carousel img {
+    max-width: 335px;
+    height: 255px;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+
+  .Arrows svg {
+    width: 11.67px;
+    height: 19.8px;
+  }
+
+  .Arrows {
+    position: absolute;
+    display: flex;
+    margin: 2%;
+    min-width: 320px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+}
