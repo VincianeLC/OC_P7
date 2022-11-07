@@ -31,13 +31,13 @@ return(
 
       {logements && logements.filter(logement => logement.id === id)
         .map((logement, i) => {
-          // Utilisation des composants, Carousel, Stars et Collapse et insertion des infos
-          return <div className='LogementContainer' key={i}>
-
+          console.log(logement);
+          return <div className='LogementContainer'>
+            
            <Carousel slides={logement.pictures} />
      
               <div className='TheBigFlex'>
-            <div className='content'>
+            <div className='content'> 
 
               <div className='Title'>
                   <h1>{logement.title}</h1>
