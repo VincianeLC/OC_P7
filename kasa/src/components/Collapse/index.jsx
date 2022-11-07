@@ -4,7 +4,7 @@ import { ReactComponent as Arrow } from '../../assets/arrow-coll.svg';
 import '../../utils/style/index.css';
 
 
-function Collapse({children, props}) {
+function Collapse({title, props}) {
 
 	
 const [isOpen, setIsOpen] = useState({})
@@ -14,7 +14,7 @@ const [isOpen, setIsOpen] = useState({})
 
 		<div className='CollapseBox'>
       
-			 <div className='collapse-title'>{children}
+			 <div className='collapse-title'>{title}
 			 <Arrow className='collapse-toggle-button-open'
 				onClick={() => setIsOpen(false)}/>
 			</div>
@@ -29,7 +29,7 @@ const [isOpen, setIsOpen] = useState({})
 		<div className='TheBigFlex'>
 		<div className='CollapseBox'>
 	
-			 <div className='collapse-title'>{children}
+			 <div className='collapse-title'>{title}
 			 <Arrow className='collapse-toggle-button-closed' onClick={() => setIsOpen(true)}/>
 			</div>
 			<div className='collapse-text'>
