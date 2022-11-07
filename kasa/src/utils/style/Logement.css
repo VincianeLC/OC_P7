@@ -99,7 +99,7 @@
 	justify-content: flex-start;
 	text-align: right;
 	font-size: 18px;
-	width: 30%;
+	
 }
 
 .profileRating {
@@ -229,7 +229,7 @@
 	.profileInfos p {
 		display: flex;
 		font-size: 12px;
-		width: 20%;
+		justify-content: flex-start;
 	}
 
 	.profileRating {

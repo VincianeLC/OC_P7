@@ -6,6 +6,7 @@ import '../../utils/style/index.css';
 function Stars({ logement }) {
 
     return (
+// Boucle 
         <div className='rating'>
             {[...Array(Number(logement.rating))].map((e, i) => {
                 return <div key={i} className='star'>
@@ -14,6 +15,7 @@ function Stars({ logement }) {
                 </div>
             })
             }
+        
             {[...Array(5 - (logement.rating))].map((e, i) => {
                 return <div key={i} className='star'>
                     <Etoile />

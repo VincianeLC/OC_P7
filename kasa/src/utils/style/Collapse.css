@@ -36,7 +36,6 @@
 .collapse-text {
     color: #FF6060;
     background: #F7F7F7;
-    height: 249px;
     border-radius: 10px;
     padding: 3%;
     border-radius: 10px;
@@ -70,7 +69,7 @@
     }
 
     .collapse-text {
-        height: 143.32px;
+    
         border-radius: 5px;
         z-index: -1;
     }
